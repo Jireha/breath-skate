@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Planeación de Clase</title>
+
+<link rel="stylesheet" href="CSS/styles.css">
+<link rel="stylesheet" href="CSS/planeacion.css">
+
+</head> 
+
+<body>
+
+<a href="alumnos.html" class="coach-btn regresar">
+Regresar
+</a>
+
+<section class="skaters">
+
+<h1 class="titulo-planeacion">
+Planeación de Clase
+</h1>
+
+
+
+<div class="planeacion-container">
+
+
+<!-- TABLA GRANDE -->
+
+<div class="tabla-wrapper">
+
+<table class="planeacion-tabla">
+
+<thead>
+
+<tr>
+
+<th>Nivel</th>
+<th>Alumnos</th>
+<th>Coach</th>
+<th>Modulo 1 (20 min)</th>
+<th>Modulo 2 (20 min)</th>
+<th>Modulo 3 (20 min)</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>Principiante</td>
+
+<td id="alumnosPrincipiante"></td>
+
+<td>
+<textarea data-field="coach_principiante"></textarea>
+</td>
+
+<td>
+<textarea data-field="principiante_mod1"></textarea>
+</td>
+
+<td>
+<textarea data-field="principiante_mod2"></textarea>
+</td>
+
+<td>
+<textarea data-field="principiante_mod3"></textarea>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Intermedio</td>
+
+<td id="alumnosIntermedio"></td>
+
+<td>
+<textarea data-field="coach_intermedio"></textarea>
+</td>
+
+<td>
+<textarea data-field="intermedio_mod1"></textarea>
+</td>
+
+<td>
+<textarea data-field="intermedio_mod2"></textarea>
+</td>
+
+<td>
+<textarea data-field="intermedio_mod3"></textarea>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Avanzado</td>
+
+<td id="alumnosAvanzado"></td>
+
+<td>
+<textarea data-field="coach_avanzado"></textarea>
+</td>
+
+<td>
+<textarea data-field="avanzado_mod1"></textarea>
+</td>
+
+<td>
+<textarea data-field="avanzado_mod2"></textarea>
+</td>
+
+<td>
+<textarea data-field="avanzado_mod3"></textarea>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<!-- MODULOS EXTRA -->
+
+<div class="modulos-box">
+
+<textarea data-field="SPOT 1" placeholder="SPOT 1"></textarea>
+
+<textarea data-field="SPOT 2" placeholder="SPOT 2"></textarea>
+
+<textarea data-field="SPOT 3" placeholder="SPOT 3"></textarea>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<script type="module" src="js/planeacion.js"></script>
+
+</body>
+
+</html>

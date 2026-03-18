@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro Skatepark</title>
+
+<link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+<body class="registro-page">
+
+<section class="registro-container">
+
+<h1>Registro Skatepark</h1>
+
+<p>
+Para ingresar al skatepark completa el registro y firma el acuerdo de responsabilidad.
+</p>
+
+<form id="formRegistro" class="registro-form">
+
+<input id="nombre" type="text" placeholder="Nombre" required>
+
+<input id="apellido" type="text" placeholder="Apellido" required>
+
+<input id="edad" type="number" placeholder="Edad" required>
+
+<label style="margin-top:10px;">Fecha</label>
+<input id="fecha" type="date" required>
+
+<input id="pago" type="number" placeholder="Pago $" required>
+
+
+<label class="contrato-check">
+
+<input type="checkbox" id="aceptaContrato" required>
+
+Acepto los términos y condiciones
+
+</label>
+
+
+<button
+type="button"
+class="contrato-btn"
+onclick="window.open('contrato.html','_blank')">
+
+Ver contrato
+
+</button>
+
+
+<div class="firma-box">
+
+<p>Firma:</p>
+
+<canvas id="firmaCanvas"></canvas>
+
+<button type="button" id="limpiarFirma" class="btn">
+Limpiar Firma
+</button>
+
+</div>
+
+
+<button type="submit" class="btn">
+Aceptar y Registrar
+</button>
+
+</form>
+
+<p id="mensajeExito" class="mensaje-exito">
+Registro enviado correctamente ✅
+</p>
+
+</section>
+
+<script type="module" src="js/registro.js"></script>
+
+</body>
+</html>

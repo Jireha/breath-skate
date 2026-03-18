@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Breath Skate | Disciplina y aprendizaje</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --negro: #0b0b0b;
+    --blanco: #ffffff;
+    --acento: #BFDDE6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #050505, #121212);
+    color: var(--blanco);
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+header {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+        url("img/imagen logo braeth.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.coach-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.coach-btn:hover {
+    background: var(--blanco);
+    color: #000;
+}
+
+header h1 {
+    font-size: clamp(2.2rem, 6vw, 5rem);
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+header p {
+    max-width: 500px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn {
+    padding: 15px 40px;
+    border: none;
+    background: var(--acento);
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ================= SECCIONES ================= */
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+section h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: var(--acento);
+    display: block;
+    margin-top: 10px;
+}
+
+/* ================= SOCIAL ================= */
+.social-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 14px 30px;
+    border: 2px solid var(--acento);
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.social-btn:hover {
+    background: var(--acento);
+    color: #000;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ================= PRECIOS ================= */
+.prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.price-card {
+    background: #111;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.price-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.price-sub {
+    font-size: 0.9rem;
+    opacity: .75;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--acento);
+}
+
+/* ================= MAPA ================= */
+.mapa iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    padding: 40px;
+    background: #050505;
+    text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+
+    header {
+        background-attachment: scroll;
+    }
+
+    header h1 {
+        letter-spacing: 2px;
+    }
+
+    .mapa iframe {
+        height: 280px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="login.html" class="coach-btn">Coaches</a>
+
+<h1>Breath Skate</h1>
+<p>Disciplina, estilo y valores enseñados a través del skate.</p>
+
+<a href="https://wa.me/525611269671?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20las%20clases%20de%20skate%20y%20su%20skatepark.%20%C2%BFPodr%C3%ADan%20compartirme%20detalles%20por%20favor%3F" target="_blank">
+<button class="btn">Contáctanos</button>
+</a>
+</header>
+
+<!-- SIGUENOS -->
+<section>
+<h2>Síguenos</h2>
+<div class="social-buttons">
+<a href="https://www.instagram.com/breath_skate" target="_blank" class="social-btn">Instagram</a>
+<a href="https://www.facebook.com/" target="_blank" class="social-btn">Facebook</a>
+<a href="https://www.tiktok.com/" target="_blank" class="social-btn">TikTok</a>
+</div>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section>
+<h2>Quiénes Somos</h2>
+<div class="about">
+<p>Somos un grupo de patinadores dedicados a impartir valores a través del skate. Nuestra misión es crear una comunidad sólida, disciplinada y con mentalidad positiva.</p>
+<img src="img/imagen niños.jpeg" alt="Niños patinando">
+</div>
+</section>
+
+<!-- PRECIOS -->
+<section>
+<h2>Nuestros Precios</h2>
+<div class="prices">
+
+<div class="price-card">
+<div class="price-title">Clases Sabatinas</div>
+<div class="price-sub">10:00am – 11:30am</div>
+<div class="price">$450</div>
+</div>
+
+<div class="price-card">
+<div class="price-title">Clase Particular</div>
+<div class="price-sub">Duración 1h 30min</div>
+<div class="price">$150</div>
+</div>
+
+<div class="price-card">
+<div class="price-title">Entrada al Parque</div>
+<div class="price-sub">Mié – Vie / 1:30pm – 7:00pm</div>
+<div class="price">$30</div>
+</div>
+
+</div>
+</section>
+
+<!-- MAPA -->
+<section class="mapa">
+<h2>Dónde Encontrarnos</h2>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.3636450214468!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff002c2749c5%3A0x1c76facf87d23f25!2sBreath-skate!5e0!3m2!1ses-419!2smx!4v1770840958231!5m2!1ses-419!2smx"
+loading="lazy"
+allowfullscreen
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<div style="text-align:center; margin-top:25px;">
+  <a href="https://maps.google.com/?q=Breath Skate" target="_blank" class="btn">
+    Abrir en Google Maps
+  </a>
+</div>
+
+</section>
+
+<footer>
+© Breath Skate
+</footer>
+
+</body>
+</html>

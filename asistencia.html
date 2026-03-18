@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Asistencia | Escuela Skate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/CSS/styles.css">
+
+<!-- CHART JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+/* ===== HEADER ASISTENCIA ===== */
+.asistencia-top {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.mes-actual {
+  font-size:2rem;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+/* 🔥 CAJA FIJA (NO SE MUEVE) */
+.grafica-box {
+  width:260px;
+  height:260px;
+  background:#111;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+
+/* ===== TABLA ===== */
+.tabla-wrapper {
+  margin-top:60px;
+}
+
+.skater-table {
+  width:100%;
+  border-collapse:collapse;
+  background:#111;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.skater-table th,
+.skater-table td {
+  padding:18px;
+  text-align:center;
+  border-bottom:1px solid #222;
+}
+
+.skater-table th {
+  background:#1a1a1a;
+  font-weight:800;
+  font-size:1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+
+  .asistencia-top{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .grafica-box{
+    width:220px;
+    height:220px;
+  }
+
+}
+</style>
+
+</head>
+<body>
+
+<a href="alumnos.html" class="coach-btn" style="left:40px; right:auto;">
+Regresar
+</a>
+
+<section class="skaters">
+
+<h1>Control de Asistencia</h1>
+
+<div class="asistencia-top">
+  <div id="mesActual" class="mes-actual"></div>
+
+  <div class="grafica-box">
+    <!-- 🔥 TAMAÑO FIJO (CLAVE) -->
+    <canvas id="graficaAsistencia" width="260" height="260"></canvas>
+  </div>
+</div>
+
+<div class="tabla-wrapper">
+<table class="skater-table">
+<thead>
+<tr id="encabezadoDias">
+<th>Alumno</th>
+</tr>
+</thead>
+<tbody id="cuerpoAsistencia"></tbody>
+</table>
+</div>
+
+</section>
+
+<script type="module" src="js/asistencia.js"></script>
+</body>
+</html>

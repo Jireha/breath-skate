@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Detalle Skater</title>
+
+<link rel="stylesheet" href="CSS/styles.css">
+
+<style>
+
+.detalle-container{
+max-width:800px;
+margin:auto;
+padding:40px 20px;
+}
+
+.detalle-box{
+background:#111;
+padding:30px;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+/* DATOS */
+.detalle-box h2{
+margin-bottom:20px;
+}
+
+.detalle-dato{
+margin:10px 0;
+font-size:1rem;
+opacity:.9;
+}
+
+/* CONTRATO */
+.contrato-box{
+margin-top:30px;
+background:#0e0e0e;
+padding:20px;
+border-radius:15px;
+box-shadow: inset 0 0 0 1px #222;
+}
+
+.contrato-box h3{
+margin-bottom:15px;
+}
+
+.contrato-box p{
+font-size:.9rem;
+line-height:1.5;
+opacity:.85;
+margin-bottom:10px;
+}
+
+.contrato-box ul{
+margin-left:20px;
+margin-bottom:10px;
+}
+
+.contrato-box li{
+font-size:.9rem;
+margin-bottom:6px;
+}
+
+/* FIRMA */
+.firma-box{
+margin-top:30px;
+}
+
+.firma-box img{
+width:100%;
+max-height:200px;
+background:#fff;
+border-radius:10px;
+object-fit:contain;
+}
+
+/* BOTÓN */
+.btn{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+background:#BFDDE6;
+color:#000;
+font-weight:700;
+border-radius:12px;
+cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+
+.detalle-container{
+padding:20px 10px;
+}
+
+.detalle-box{
+padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="detalle-container">
+
+<div class="detalle-box">
+
+<h2>Detalle del Skater</h2>
+
+<p class="detalle-dato"><strong>Nombre:</strong> <span id="nombre"></span></p>
+<p class="detalle-dato"><strong>Apellido:</strong> <span id="apellido"></span></p>
+<p class="detalle-dato"><strong>Edad:</strong> <span id="edad"></span></p>
+<p class="detalle-dato"><strong>Fecha:</strong> <span id="fecha"></span></p>
+<p class="detalle-dato"><strong>Pago:</strong> $<span id="pago"></span></p>
+
+
+<!-- 🔥 CONTRATO BONITO -->
+<div class="contrato-box">
+
+<h3>Contrato y Términos</h3>
+
+<p>
+Al firmar y registrarse en Breath Skate, el participante acepta:
+</p>
+
+<ul>
+<li>Que el skate implica riesgos físicos.</li>
+<li>No se responsabiliza por accidentes por mal uso o incumplimiento.</li>
+<li>Declara estar en condiciones físicas adecuadas.</li>
+<li>Debe usar protección recomendada.</li>
+<li>Menores requieren autorización de tutor.</li>
+<li>Debe respetar normas y no usar sustancias dentro del parque.</li>
+</ul>
+
+<p>
+La firma digital confirma la aceptación de estos términos.
+</p>
+
+</div>
+
+
+<!-- 🔥 FIRMA -->
+<div class="firma-box">
+
+<h3>Firma del acuerdo</h3>
+<img id="firmaImg">
+
+</div>
+
+
+<button onclick="window.location.href='skaters.html'" class="btn">
+Volver
+</button>
+
+</div>
+
+</section>
+
+<script type="module" src="js/detalleSkater.js"></script>
+
+</body>
+</html>

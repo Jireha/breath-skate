@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Coaches | Escuela de Skate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+<body class="login-page">
+
+<div class="login-box">
+
+    <h1 style="margin-bottom:8px;">Acceso Coaches</h1>
+    <p style="opacity:.7; margin-bottom:40px; letter-spacing:1px;">
+        Personal autorizado
+    </p>
+
+    <form id="loginForm">
+
+        <input type="text" id="user" placeholder="Usuario" required>
+        <input type="password" id="pass" placeholder="Contraseña" required>
+
+        <!-- SOLO CAMBIO DE COLOR AQUÍ -->
+        <p id="error-msg" style="display:none; color:#BFDDE6; margin:12px 0 22px;">
+            Usuario o contraseña incorrectos
+        </p>
+
+        <button type="submit" class="btn" style="width:100%; color:#000;">
+    Ingresar
+</button>
+
+    </form>
+
+    <div style="height:1px; background:#333; margin:35px 0;"></div>
+
+    <a href="index.html"
+       style="
+            text-decoration:none;
+            color:#bbb;
+            font-size:.85rem;
+            letter-spacing:2px;
+            text-transform:uppercase;
+            transition:.3s;
+       "
+       onmouseover="this.style.color='#BFDDE6'"
+       onmouseout="this.style.color='#bbb'">
+        Volver al inicio
+    </a>
+
+</div>
+
+<script>
+    const form = document.getElementById("loginForm");
+    const errorMsg = document.getElementById("error-msg");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const user = document.getElementById("user").value;
+        const pass = document.getElementById("pass").value;
+
+        if (user === "COACHES" && pass === "ezequiel37") {
+            window.location.href = "/panel.html";
+        } else {
+            errorMsg.style.display = "block";
+        }
+    });
+</script>
+
+</body>
+</html>

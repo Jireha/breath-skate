@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trucos por Nivel</title>
+
+<link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+
+<body class="panel-page">
+
+<a href="panel.html" class="btn regresar">
+← Regresar
+</a>
+
+<div class="panel-box">
+
+<h1>Trucos por Nivel</h1>
+
+<p style="opacity:.7;margin-bottom:40px;">
+</p>
+
+
+<div class="trucos-container">
+
+<!-- PRINCIPIANTE -->
+
+<div class="trucos-card">
+
+<h2>Principiante</h2>
+
+<button class="btn" onclick="agregarTruco('Principiante')">
+Agregar Truco
+</button>
+
+<table class="trucos-table">
+<tbody id="tablaPrincipiante"></tbody>
+</table>
+
+</div>
+
+
+<!-- INTERMEDIO -->
+
+<div class="trucos-card">
+
+<h2>Intermedio</h2>
+
+<button class="btn" onclick="agregarTruco('Intermedio')">
+Agregar Truco
+</button>
+
+<table class="trucos-table">
+<tbody id="tablaIntermedio"></tbody>
+</table>
+
+</div>
+
+
+<!-- AVANZADO -->
+
+<div class="trucos-card">
+
+<h2>Avanzado</h2>
+
+<button class="btn" onclick="agregarTruco('Avanzado')">
+Agregar Truco
+</button>
+
+<table class="trucos-table">
+<tbody id="tablaAvanzado"></tbody>
+</table>
+
+</div>
+
+
+</div>
+
+</div>
+
+<script type="module" src="js/trucos.js"></script>
+
+</body>
+
+</html>

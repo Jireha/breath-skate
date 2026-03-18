@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Skaters | Breath Skate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+
+<!-- BOTÓN REGRESAR PREMIUM -->
+<button
+class="coach-btn regresar"
+style="left:40px; right:auto; z-index:9999;"
+onclick="window.location.href='panel.html'">
+Regresar
+</button>
+
+<section class="skaters">
+
+<h1>Skaters entre semana</h1>
+
+<form id="skaterForm" class="skater-form">
+
+<input type="text" id="nombre" placeholder="Nombre" required>
+<input type="number" id="edad" placeholder="Edad" required>
+<input type="date" id="fecha" required>
+<input type="number" id="pago" placeholder="Pago $" required>
+
+<button type="submit" class="btn">
+Agregar
+</button>
+
+</form>
+
+<table class="skater-table">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Edad</th>
+<th>fecha</th>
+<th>Pago</th>
+</tr>
+</thead>
+
+<tbody id="tablaSkaters"></tbody>
+</table>
+
+<!-- TOTAL PREMIUM GLOBO -->
+<div class="total">
+Total: $<span id="totalPago">0</span>
+</div>
+
+<!-- LIMPIAR -->
+<div style="margin-top: 60px; text-align: center;">
+<button id="limpiarBtn" class="btn" style="background:#333;">
+Limpiar registros
+</button>
+</div>
+
+</section>
+
+<script type="module" src="js/skaters.js"></script>
+</body>
+</html>
+
